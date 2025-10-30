@@ -5,6 +5,11 @@ class IconsView{
     {
         try{
             const res  = await fetch(iconsUrl);
+
+            if (!res.ok) {
+            throw new Error(`HTTP error! status: ${res.status}`);
+            }
+
             const svgText = await res.text();
 
             const div = document.createElement('div');
@@ -15,10 +20,19 @@ class IconsView{
 
             document.body.insertBefore(div, document.body.firstChild);
             console.log('✅ Icons loaded successfully');
+
+            // Verify icons
+            const iconCheck = document.getElementById('icon-clock');
+            if (iconCheck) {
+                console.log('✅ Icons verified - ready to use!');
+            } else {
+                console.warn('⚠️ Icons injected but symbols not found');
+            }
         }
         catch(err)
         {
             console.error('❌ Failed to load icons:', err);
+            console.error('Icon URL was:', iconsUrl);
         }
     }
 }

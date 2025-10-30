@@ -163,10 +163,10 @@ const newFeature = function()
 }
 
 // initiate the project
-const initiate = function()
+const initiate = async function()
 {
   // Load icons
-  iconsView.injectIcons();
+  await iconsView.injectIcons();
 
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipes);
