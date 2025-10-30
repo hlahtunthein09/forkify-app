@@ -154,6 +154,10 @@ const controlAddRecipe = async function(newRecipe)
   }
 }
 
+const newFeature = function()
+{
+  console.log("Welcome to the application😍");
+}
 
 // initiate the project
 const initiate = function()
@@ -166,6 +170,7 @@ const initiate = function()
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
   console.log("Welcome!");
+  newFeature();
 }
 
 initiate();
