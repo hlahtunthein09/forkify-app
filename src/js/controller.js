@@ -6,6 +6,9 @@ import resultView from "./views/resultView.js";
 import paginationView from "./views/paginationView.js";
 import bookmarksView from "./views/bookmarksView.js";
 import addRecipeView from "./views/addRecipeView.js";
+
+// for icon test
+import iconsView from "./views/iconsView.js";
  
 import 'core-js/stable';
 import 'regenerator-runtime/runtime'
@@ -162,6 +165,9 @@ const newFeature = function()
 // initiate the project
 const initiate = function()
 {
+  // Load icons
+  iconsView.injectIcons();
+
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipes);
   recipeView.addHandlerUpdateServings(controlServings);
