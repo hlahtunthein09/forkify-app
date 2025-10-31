@@ -5,4 +5,4 @@ export const RES_PER_PAGE = 10;
 export const KEY = '2f072ec2-9fea-4bea-93ed-53f6a6a20bf7';
 export const MODAL_CLOSE_SEC = 2.5;
 // for testing
-export const icons = '/icons.svg';
+// export const icons = 'section_12\icons.svg';
