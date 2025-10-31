@@ -1,4 +1,4 @@
-// import icons from "url:../../img/icons.svg";
+import icons from "url:../../img/icons.svg";
 import View from "./View.js";
 
 class PaginationView extends View{
@@ -55,7 +55,7 @@ class PaginationView extends View{
         return `
             <button data-goto = "${curPage - 1}" class="btn--inline pagination__btn--prev">
                 <svg class="search__icon">
-                    <use href="#icon-arrow-left"></use>
+                    <use href="${icons}#icon-arrow-left"></use>
                 </svg>
                 <span>Page ${curPage - 1}</span>
             </button>

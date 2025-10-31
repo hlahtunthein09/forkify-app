@@ -1,4 +1,4 @@
-import iconsUrl from "url:../../img/icons.svg";
+/* import iconsUrl from "url:../../img/icons.svg";
 
 class IconsView{
     async injectIcons()
@@ -37,4 +37,4 @@ class IconsView{
     }
 }
 
-export default new IconsView();
+export default new IconsView(); */

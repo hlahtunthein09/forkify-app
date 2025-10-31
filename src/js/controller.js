@@ -8,7 +8,7 @@ import bookmarksView from "./views/bookmarksView.js";
 import addRecipeView from "./views/addRecipeView.js";
 
 // for icon test
-import iconsView from "./views/iconsView.js";
+// import iconsView from "./views/iconsView.js";
  
 import 'core-js/stable';
 import 'regenerator-runtime/runtime'
@@ -163,10 +163,10 @@ const newFeature = function()
 }
 
 // initiate the project
-const initiate = async function()
+const initiate =  function()
 {
   // Load icons
-  await iconsView.injectIcons();
+  // await iconsView.injectIcons();
 
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipes);
