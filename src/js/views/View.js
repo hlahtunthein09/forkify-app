@@ -1,4 +1,5 @@
-import icons from "url:../../img/icons.svg";
+// import icons from "url:../../img/icons.svg";
+import { icons } from "../config.js";
 
 export default class View{
     _data;

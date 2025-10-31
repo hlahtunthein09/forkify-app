@@ -1,6 +1,7 @@
 import View from "./View.js";
 
-import icons from "url:../../img/icons.svg"; // for parcel 2
+// import icons from "url:../../img/icons.svg"; // for parcel 2
+import { icons } from "../config.js";
 import Fraction from 'fraction.js';
 // import { ICONS_PATH } from "../config.js";
 
